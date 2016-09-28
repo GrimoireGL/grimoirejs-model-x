@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "noImplicitAny": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts"
+  ],
+  "files": [
+    "./src/Components/XMeshComponent.ts",
+    "./src/Components/XModelComponent.ts",
+    "./src/index.ts",
+    "./src/Parser/IXMaterialData.ts",
+    "./src/Parser/XFile.ts",
+    "./src/Shader/X.sort.d.ts"
+  ],
+  "exclude": [],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
