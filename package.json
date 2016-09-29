@@ -66,6 +66,6 @@
     "grimoirejs-inquisitor": "^1.0.3"
   },
   "dependencies": {
-    "grimoirejs-fundamental": "^0.2.9"
+    "grimoirejs-fundamental": "^0.2.10"
   }
 }

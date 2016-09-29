@@ -29,9 +29,7 @@ export default class XModelComponent extends Component {
         default: {
           topology: WebGLRenderingContext.TRIANGLES,
           generator: function* () {
-            for (let i = 0; i < xf.indicies.length; i++) {
-              yield xf.indicies[i];
-            }
+            yield* xf.indicies;
           }
         }
       },
@@ -46,25 +44,13 @@ export default class XModelComponent extends Component {
           getGenerators: () => {
             return {
               position: function* () {
-                let i = 0;
-                while (true) {
-                  yield xf.positions[i];
-                  i++;
-                }
+                yield* xf.positions;
               },
               normal: function* () {
-                let i = 0;
-                while (true) {
-                  yield xf.normals[i];
-                  i++;
-                }
+                yield* xf.normals;
               },
               uv: function* () {
-                let i = 0;
-                while (true) {
-                  yield xf.texCoords[i];
-                  i++;
-                }
+                yield* xf.texCoords;
               }
             };
           }
