@@ -1,4 +1,6 @@
 # model-x
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/GrimoireGL/grimoirejs-model-x.svg)](https://greenkeeper.io/)
 > Add .x file support in grimoire.js
 
 xファイル形式をgrimoirejsで表示するためのアドオン。
